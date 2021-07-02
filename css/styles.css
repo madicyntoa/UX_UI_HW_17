@@ -1,45 +1,131 @@
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav-links, a, button, .logo {
+    font-family: laca, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #FFA7A6;
 }
 
 .logo {
-    width:23%;
-    padding: 1%;
-    text-align: center;
+    cursor: pointer;
+    margin-right: auto;
 }
 
-nav {
-    width: 73%;
-    padding: 1%;
+.nav-links {
+    list-style: none;
 }
 
-nav ul {
-    width: 50%;
-    margin-left: auto;
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #CD258F;
+}
+
+header button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(205,37,143,1);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+    background-color: rgba(205,37,143,0.5);
+}
+
+body {
+    background-color: black;
+}
+
+.content button {
+    margin-left:250px;
+    padding: 9px 25px;
+    background-color: black;
+    border: #FED001 3px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 30px;
+}
+
+.content p{
+    margin-top: 20px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 70px;
+    width: 150mm;
+    padding-left: 15mm;
+    color: white;
 }
 
 .heroText {
     height: 600px;
     padding: 25px;
+    font-family: laca, sans-serif;
+   
 }
 
 .content {
     width: 500px;
     margin: 0 auto;
+    font-weight: 500;
+    color: white;
 }
 
 footer {
-    background-color: #373738;
-    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #FFA7A6;;
+    color: black;
 }
 
-footer ul {
+footer p{
+    color: white;
+    font-family: laca;
+    font-weight: 500;
+
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
     display: inline-block;
-    vertical-align: top;
+    padding: 0px 20px;
 }
 
-footer .inline-block {
-    justify-content: space-evenly;
-    margin-left: 50px;
+.footer-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.footer-links li a:hover {
+    color: #CD258F;
 }
